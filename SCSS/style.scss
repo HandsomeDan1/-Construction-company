@@ -24,6 +24,7 @@ $fontfamilyopensans: 'Open Sans', sans-serif;
 
 .header {
   background-image: url("../imgs/background.svg");
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   position: relative;

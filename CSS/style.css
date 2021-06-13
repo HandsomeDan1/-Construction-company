@@ -9,6 +9,7 @@
 
 .header {
   background-image: url("../imgs/background.svg");
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
