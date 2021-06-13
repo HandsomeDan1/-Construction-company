@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.html, body {
+  height: 100%;
+}
+
+.header {
+  background-image: url("../imgs/background.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.header__maintitle {
+  font-family: "Oswald", sans-serif;
+  color: #FFFFFF;
+  font-size: 64px;
+  text-align: center;
+  line-height: 75px;
+  margin-top: 130px;
+}
+.header__sub-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 280px;
+}
+.header__years {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 81%;
+  left: 11%;
+  padding: 17px 0;
+  background-color: #F7F7F7;
+}
+.header__years__inmarket__26 {
+  color: #F7654A;
+  font-family: "Oswald", sans-serif;
+  font-size: 72px;
+  text-align: center;
+}
+.header__years__inmarket__year {
+  color: #404149;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+.header__years__inmarket__market {
+  color: #999999;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.projects__title {
+  margin-top: 250px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  color: #404149;
+}
+.projects__cards {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+}
+.projects__cards__card {
+  width: 25%;
+  margin-right: 50px;
+}
+.projects__cards__card__line {
+  margin-top: 45px;
+  width: 55px;
+  height: 6px;
+  background-color: #F7654A;
+}
+.projects__cards__card__title {
+  margin-top: 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  color: #404149;
+}
+.projects__cards__card__desc {
+  color: #999999;
+  line-height: 22px;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.sendemail {
+  margin-top: 150px;
+  background-color: #F7654A;
+  padding: 30px;
+}
+.sendemail__maindiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sendemail__maindiv__text__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+.sendemail__maindiv__text__desc {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.sendemail__maindiv__button__div {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 175px;
+  height: 49px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.sendemail__maindiv__button__div__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  margin-left: 15px;
+  color: #404149;
+}
+
+.services {
+  width: 1230px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.services__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  color: #404149;
+  text-align: center;
+  margin-top: 150px;
+}
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.services__list__item {
+  margin: 30px;
+  background-color: #F7F7F7;
+  width: 350px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.services__list__item__title {
+  margin-top: 25px;
+  text-align: center;
+  line-height: 31px;
+  font-size: 21px;
+  font-family: "Oswald", sans-serif;
+  color: #404149;
+}
