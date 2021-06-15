@@ -24,7 +24,6 @@ $fontfamilyopensans: 'Open Sans', sans-serif;
 
 .header {
   background-image: url("../imgs/background.svg");
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -176,17 +175,17 @@ $fontfamilyopensans: 'Open Sans', sans-serif;
         height: 49px;
         transition-duration: 0.2s;
 
-        //&__div:hover {
-        //  box-shadow: 0 10px 40px $whitecolor;
-        //  cursor: pointer;
-        //  color: $brightcolor;
-        //}
+        &:hover {
+          box-shadow: 0 5px 20px $whitecolor;
+          cursor: pointer;
+          color: $brightcolor;
+        }
 
         &__text {
           font-family: "Oswald", sans-serif;
           font-size: 16px;
           margin-left: 15px;
-          color: $darkcolor;
+          color: black;
         }
       }
     }
@@ -219,19 +218,285 @@ $fontfamilyopensans: 'Open Sans', sans-serif;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      line-height: 31px;
+      font-size: 25px;
+      font-family: "Oswald", sans-serif;
+      color: $darkcolor;
+      transition-duration: 0.2s;
 
-      //&__item:hover{
-      //
-      //}
+      &:hover {
+        background-color: #e1e1e1;
+        font-size: 30px;
+      }
+    }
+  }
+}
 
+.partnership {
+  margin-top: 150px;
+  padding: 30px;
+  background-color: #404149;
+
+  &__maindiv {
+
+    &__title {
+      font-family: "Oswald", sans-serif;
+      font-size: 36px;
+      text-align: center;
+      color: $whitecolor;
+      margin-top: 60px;
+    }
+
+    &__logos {
+      display: flex;
+      justify-content: space-between;
+      width: 1110px;
+      margin: 92px auto 70px;
+    }
+  }
+}
+
+.feedback {
+  &__title {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: $darkcolor;
+    font-size: 36px;
+    margin-top: 105px;
+  }
+
+  &__maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__comment {
+      margin: 30px;
+
+      &__user {
+        font-family: "Oswald", sans-serif;
+        font-size: 21px;
+      }
+
+      &__text {
+        position: relative;
+        background-color: #F7F7F7;
+        width: 350px;
+        height: 260px;
+        margin-bottom: 30px;
+
+        &__symbol {
+          position: absolute;
+          font-weight: bold;
+          font-size: 96px;
+          font-family: "Oswald", sans-serif;
+          color: $accentcolor;
+          margin-left: 30px;
+        }
+
+        &__letters {
+          font-family: "Open Sans", sans-serif;
+          font-size: 14px;
+          line-height: 21px;
+          color: $brightcolor;
+          position: absolute;
+          top: 80px;
+          left: 30px;
+        }
+      }
+    }
+  }
+}
+
+.sendrequest {
+  margin-top: 150px;
+  background-color: $accentcolor;
+  padding: 30px;
+
+  &__maindiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &__text {
       &__title {
-        margin-top: 25px;
-        text-align: center;
-        line-height: 31px;
+        font-family: "Oswald", sans-serif;
+        font-size: 40px;
+        color: $whitecolor;
+      }
+
+      &__desc {
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+        color: $whitecolor;
+      }
+    }
+
+    &__button {
+
+      &__div {
+        background-color: $whitecolor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 175px;
+        height: 49px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          box-shadow: 0 5px 20px $whitecolor;
+          cursor: pointer;
+          color: $brightcolor;
+        }
+
+        &__text {
+          font-family: "Oswald", sans-serif;
+          font-size: 16px;
+          margin-left: 15px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.contacts {
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    color: $darkcolor;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  &__maindiv {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto 178px;
+
+    &__adress {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 255px;
+      height: 72px;
+
+      &__name {
+        margin-top: 15px;
         font-size: 21px;
         font-family: "Oswald", sans-serif;
-        color: $darkcolor;
+        color: $brightcolor;
+        text-align: center;
       }
+
+      &__location {
+        margin-top: 15px;
+        font-size: 21px;
+        color: #000000;
+        font-family: "Oswald", sans-serif;
+        text-align: center;
+      }
+    }
+
+    &__numbers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 255px;
+      height: 72px;
+
+      &__name {
+        margin-top: 15px;
+        font-size: 21px;
+        font-family: "Oswald", sans-serif;
+        color: $brightcolor;
+        text-align: center;
+      }
+
+      &__number {
+        margin-top: 15px;
+        font-size: 21px;
+        color: #000000;
+        font-family: "Oswald", sans-serif;
+        text-align: center;
+      }
+    }
+
+    &__workinghours {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 255px;
+      height: 72px;
+
+      &__name {
+        margin-top: 15px;
+        font-size: 21px;
+        font-family: "Oswald", sans-serif;
+        color: $brightcolor;
+        text-align: center;
+      }
+
+      &__time {
+        margin-top: 15px;
+        font-size: 21px;
+        color: #000000;
+        font-family: "Oswald", sans-serif;
+        text-align: center;
+      }
+    }
+
+    &__email {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 255px;
+      height: 72px;
+
+      &__name {
+        margin-top: 15px;
+        font-size: 21px;
+        font-family: "Oswald", sans-serif;
+        color: $brightcolor;
+        text-align: center;
+      }
+
+      &__mail {
+        margin-top: 15px;
+        font-size: 21px;
+        color: $accentcolor;
+        font-family: "Oswald", sans-serif;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.footer{
+  background-color: $darkcolor;
+  height: 82px;
+
+  &__maindiv {
+    display: flex;
+    width: 1110px;
+    margin: 0 auto 0;
+    justify-content: space-between;
+
+    &__copyright {
+      font-family: "Open Sans", sans-serif;
+      color: $brightcolor;
+      margin: 30px 0 30px 0;
+    }
+
+    &__creator {
+      font-family: "Open Sans", sans-serif;
+      color: $brightcolor;
+      margin: 30px 0 30px 0;
     }
   }
 }
